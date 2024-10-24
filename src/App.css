@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  background: #333;
+  background: url(./assets/costing_app_image.avif);
+  position: relative;
+}
+
+html::before {
+  content: "";
+  backdrop-filter: blur(5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: url(./assets/costing_app_image.avif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  padding: 5px 30px;
+  align-items: center;
+  max-width: 351px;
+  margin: auto;
+  height: 100%;
+  z-index: 20;
+}
+
+.app {
+  padding: 30px 10px;
+  border-radius: 15px;
+  background: rgb(51, 51, 51);
+  background: rgb(109 103 103 / 23%);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #e08976;
+  max-width: 340px;
+  width: 100%;
+  margin: auto;
+  color: lemonchiffon;
+  text-shadow: #e08976;
+  display: grid;
+  gap: 15px;
+}
+
+h1 {
+  color: lemonchiffon;
+  text-shadow: 2px 3px 5px #0d103f;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+p {
+  text-shadow: 2px 3px 4px #0d103f;
+}
+
+input {
+  background: rgba(252, 252, 252, 0.233);
+  color: #fff;
+  border: 1px solid lemonchiffon;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  max-width: 160px;
+  width: 100%;
+  font-weight: 600;
+}
+
+button {
+  background: transparent;
+  color: lemonchiffon;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-weight: 600;
+  border: 1px solid lemonchiffon;
+}
+
+button:hover {
+  background: rgba(252, 252, 252, 0.205);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
